@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South West KEC Offering</title>
+    <link rel="stylesheet" href="../src/index.css">
+    
+</head>
+<body>
+    <div id="dashboard-image">
+        <img src="../img/rice-field.jpg" id="rice" alt="rice-field">
+        <img src="../img/logo.jpg" id="logo" alt="logo">
+    </div>
+    <h1 id="south-west">ភូមិ​ភាគ​និរតី</h1>
+    <h2 id="page-title">ដង្វាយ ២០% ប្រចាំ​ត្រីមាស</h2>
+    <br>
+    <hr>
+    <br>
+    <form class="left-indent" action="/preview" method="post">
+        <label for="name">ក្រុម​ជំនុំ​ឈ្មេាះ<span style="color:red"​៖>*</span>​៖ </label>
+        <input type="text" name="name" class="text" id="church" required oninvalid="this.setCustomValidity('សូមតម្រូវឲ្យបំពេញឈ្មោះ​ក្រុម​ជំនុំ')">
+        <br><br>
+
+        <label for="trisemester">ត្រីមាសទី៖</label>
+        <br>
+        <input type="radio" name="trisemester" id="tri-1" class="radio" value="tri-one">
+        <label for="tri-1"​>ត្រីមាស​ទី​១​</label><br>
+        <input type="radio" name="trisemester" id="tri-2" class="radio" value="tri-two">
+        <label for="tri-2"​>ត្រីមាស​ទី​២​</label><br>
+        <input type="radio" name="trisemester" id="tri-3" class="radio" value="tri-three">
+        <label for="tri-3"​>ត្រីមាស​ទី​៣​</label><br>
+        <input type="radio" name="trisemester" id="tri-4" class="radio" value="tri-four">
+        <label for="tri-4"​>ត្រីមាស​ទី​៤​</label>
+        <br><br><hr><br>
+
+        <label for="none"><strong>តង្វាយ​ប្រចាំ​អាទិត្យ៖</strong></label>
+        <br><br>
+
+        <div class="weekly-offering">
+            <ul>
+
+                <!--Month 1-->
+                <li>
+                    <div class="week-box" id="month1-week1">អាទិត្យទី១៖
+
+                    </div>
+                </li>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m1-w1-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w1-date" id="m1-w1-date">
+                            <br><br>
+                            <label for="m1-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w1-date-dollar" id="m1-w1-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m1-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w1-date-riel" id="m1-w1-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+
+
+
+                        
+                    </ul>
+
+                    <!--Week 2-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month1-week2">អាទិត្យទី២៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m1-w2-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w2-date" id="m1-w2-date">
+                            <br><br>
+                            <label for="m1-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w2-date-dollar" id="m1-w2-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m1-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w2-date-riel" id="m1-w2-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week2-->
+
+                    <!--Week 3-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month1-week3">អាទិត្យទី៣៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m1-w3-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w3-date" id="m1-w3-date">
+                            <br><br>
+                            <label for="m1-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w3-date-dollar" id="m1-w3-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m1-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w3-date-riel" id="m1-w3-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week3-->
+
+                    <!--Week 4-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month1-week4">អាទិត្យទី៤៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m1-w4-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w4-date" id="m1-w4-date">
+                            <br><br>
+                            <label for="m1-w4-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w4-date-dollar" id="m1-w4-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m1-w4-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w4-date-riel" id="m1-w4-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week4-->
+
+                    <!--Week 5-->
+                    <div class="week-box" style="background: red; border-radius:0; position:relative; z-index: 6;" id="month1-week5">អាទិត្យទី៥(បើ​មាន​)៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m1-w5-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w5-date" id="m1-w5-date">
+                            <br><br>
+                            <label for="m1-w5-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w5-date-dollar" id="m1-w5-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m1-w5-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w5-date-riel" id="m1-w5-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                        <hr><br>
+                    <!--End Week5-->
+                <!--End Month1-->
+
+
+                <!--Month 2-->
+                <li>
+                    <div class="week-box" id="month2-week1">អាទិត្យទី១៖
+
+                    </div>
+                </li>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m2-w1-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w1-date" id="m2-w1-date">
+                            <br><br>
+                            <label for="m2-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w1-date-dollar" id="m2-w1-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m2-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w1-date-riel" id="m2-w1-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+
+
+
+                        
+                    </ul>
+
+                    <!--Week 2-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month2-week2">អាទិត្យទី២៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m2-w2-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w2-date" id="m2-w2-date">
+                            <br><br>
+                            <label for="m2-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w2-date-dollar" id="m2-w2-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m2-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w2-date-riel" id="m2-w2-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week2-->
+
+                    <!--Week 3-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month2-week3">អាទិត្យទី៣៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m2-w3-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w3-date" id="m2-w3-date">
+                            <br><br>
+                            <label for="m2-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w3-date-dollar" id="m2-w3-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m2-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w3-date-riel" id="m2-w3-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week3-->
+
+                    <!--Week 4-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month2-week4">អាទិត្យទី៤៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m2-w4-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w4-date" id="m2-w4-date">
+                            <br><br>
+                            <label for="m2-w4-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w4-date-dollar" id="m2-w4-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m2-w4-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w4-date-riel" id="m2-w4-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week4-->
+
+                    <!--Week 5-->
+                    <div class="week-box" style="background: red; border-radius:0; position:relative; z-index: 6;" id="month2-week5">អាទិត្យទី៥(បើ​មាន​)៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m2-w5-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w5-date" id="m2-w5-date">
+                            <br><br>
+                            <label for="m2-w5-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w5-date-dollar" id="m2-w5-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m2-w5-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w5-date-riel" id="m2-w5-date-riel"> ៛</span>
+                            <br><br>
+                        </li><hr><br>
+                    <!--End Week5-->
+                <!--End Month2-->
+
+                <!--Month 3-->
+                <li>
+                    <div class="week-box" id="month3-week1">អាទិត្យទី១៖
+
+                    </div>
+                </li>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m3-w1-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w1-date" id="m3-w1-date">
+                            <br><br>
+                            <label for="m3-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w1-date-dollar" id="m3-w1-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m3-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w1-date-riel" id="m3-w1-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+
+
+
+                        
+                    </ul>
+
+                    <!--Week 2-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month3-week2">អាទិត្យទី២៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m3-w2-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w2-date" id="m3-w2-date">
+                            <br><br>
+                            <label for="m3-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w2-date-dollar" id="m3-w2-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m3-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w2-date-riel" id="m3-w2-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week2-->
+
+                    <!--Week 3-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month3-week3">អាទិត្យទី៣៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m3-w3-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w3-date" id="m3-w3-date">
+                            <br><br>
+                            <label for="m3-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w3-date-dollar" id="m3-w3-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m3-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w3-date-riel" id="m3-w3-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week3-->
+
+                    <!--Week 4-->
+                    <div class="week-box" style="border-radius: 0; position: relative; z-index: 6;" id="month3-week4">អាទិត្យទី៤៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m3-w4-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w4-date" id="m3-w4-date">
+                            <br><br>
+                            <label for="m3-w4-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w4-date-dollar" id="m3-w4-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m3-w4-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w4-date-riel" id="m3-w4-date-riel"> ៛</span>
+                            <br><br>
+                        </li>
+                    <!--End Week4-->
+
+                    <!--Week 5-->
+                    <div class="week-box" style="background: red; border-radius:0; position:relative; z-index: 6;" id="month3-week5">អាទិត្យទី៥(បើ​មាន​)៖
+
+                    </div>
+                    <ul class="weekly-offering">
+                        <li class="weekly-card">
+                            <br>
+                            <label for="m3-w5-date">&#160;&#160;&#160;&#160;កាលបរិច្ឆទ៖</label>
+                            &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w5-date" id="m3-w5-date">
+                            <br><br>
+                            <label for="m3-w5-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w5-date-dollar" id="m3-w5-date-dollar"> $</span>
+                            <br><br>
+                            <label for="m3-w5-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w5-date-riel" id="m3-w5-date-riel"> ៛</span>
+                            <br><br>
+                        </li><hr><br>
+                    <!--End Week5-->
+                <!--End Month3-->
+
+                        
+
+             </ul>
+        </div>
+
+        <div class=""review-container> <button type="button" id="cal">ចុចទីនេះដើម្បីគណនា</button> </div>
+
+        <div id="table" style="visibility : hidden;">
+            <google-sheets-html-origin><table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" data-sheets-root="1" style="table-layout: fixed; font-size: 10pt; font-family: Arial; width: 0px; border-collapse: collapse; border: none;">
+                <thead>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 30px;">
+                    <th></th>
+                  </tr>
+                </thead><colgroup><col width="46"><col width="266"><col width="110"><col width="112"><col width="147"><col width="159"><col width="120"></colgroup>
+                <tbody>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 30px;">
+                    <td rowspan="1" colspan="7" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;គ្រីស្ទ​បរិស័ទ​ដំណឹងល្អ​ខ្មែរ​នៃ​និកាយ​ (C&amp;MA) ភូមិភាគ​និរតី ឈ្មោះក្រុមជំនុំ &quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:40,&quot;2&quot;:{&quot;3&quot;:&quot;Arial&quot;}}{&quot;1&quot;:46}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Bokor; font-size: 11pt; text-align: center;"><span style="font-size: 11pt; font-family: Bokor, Arial;">គ្រីស្ទ​បរិស័ទ​ដំណឹងល្អ​ខ្មែរ​នៃ​និកាយ​ </span><span style="font-size: 11pt; font-family: Arial;">(C&amp;MA)</span><span style="font-size: 11pt; font-family: Bokor, Arial;"> ភូមិភាគ​និរតី ឈ្មោះក្រុមជំនុំ<span id="church-name"></span></span></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 32px;">
+                    <td rowspan="1" colspan="7" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;បញ្ជីដង្វាយ ២០% ប្រចាំខែ កក្កដា ឆ្នាំ ${thisYear}&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:25,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:31}" style="border-width: 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: middle; font-family: Battambang; font-size: 11pt; text-align: center;"><span style="font-size: 11pt; font-family: Battambang, Arial;">បញ្ជីដង្វាយ ២០% ប្រចាំខែ <span id="month0"></span> </span><span style="font-size: 11pt; font-family: Battambang, Arial; font-weight: bold;"><span id="trisemester-zero"></span></span><span style="font-size: 11pt; font-family: Battambang, Arial;"> ឆ្នាំ <span id="thisYear"></span></span></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ល.រ&quot;}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ល.រ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;កាលបរិច្ឆេទ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">កាលបរិច្ឆេទ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ដង្វាយប្រាក់ដុល្លារ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ដង្វាយប្រាក់ដុល្លារ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ដង្វាយប្រាក់​រៀល&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ដង្វាយប្រាក់​រៀល</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;២០% ប្រាក់​ដុល្លារ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">២០% ប្រាក់​ដុល្លារ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;២០% ប្រាក់​រៀល&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">២០% ប្រាក់​រៀល</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ផ្សេងៗ&quot;}" style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ផ្សេងៗ</td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:1}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">1</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;A&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: middle; font-size: 11pt; text-align: right;"><span id="date0"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:1}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar0"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:7}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel0"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:13}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar020"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:19}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel020"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:2}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">2</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;B&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="date1"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:2}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); text-align: right;">$ <span id="dollar1"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:8}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); text-align: right;"><span id="riel1"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:14}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar120"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:20}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel120"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:3}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">3</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;C&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: middle; font-size: 11pt; text-align: right;"><span id="date2"><span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:3}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar2"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:9}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel2"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:15}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar220"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:21}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel220"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:4}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">4</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;D&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: middle; font-size: 11pt; text-align: right;"><span id="date3"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:4}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar3"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:10}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel3"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:16}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar320"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:22}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel320"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:5}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">5</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;E&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: middle; font-size: 11pt; text-align: right;"><span id="date4"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:5}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar4"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:11}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel4"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:17}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar420"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:23}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel420"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;*&quot;}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">*</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;សរុប​ដង្វាយ ២០%&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Moul; text-align: center;">សរុប​ដង្វាយ ២០%</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:6}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-weight: bold; text-align: right;"></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:12}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-weight: bold; text-align: right;"></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:18}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-weight: bold; text-align: center;">$ <span id="sumdollar020"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:24}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-weight: bold; text-align: right;"><span id="sumriel020"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 28px;">
+                    <td rowspan="1" colspan="7" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;បញ្ជីដង្វាយ ២០% ប្រចាំខែ សីហា ឆ្នាំ ២០២៣&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:25,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:29}" style="border-width: 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: middle; font-family: Battambang; font-size: 11pt; text-align: center;"><span style="font-size: 11pt; font-family: Battambang, Arial;">បញ្ជីដង្វាយ ២០% ប្រចាំខែ </span><span style="font-size: 11pt; font-family: Battambang, Arial; font-weight: bold;"><span id="month1"></span><span style="font-size: 11pt; font-family: Battambang, Arial;"> ឆ្នាំ <span id="thisYear1"></span></span></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ល.រ&quot;}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ល.រ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;កាលបរិច្ឆេទ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">កាលបរិច្ឆេទ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ដង្វាយប្រាក់ដុល្លារ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ដង្វាយប្រាក់ដុល្លារ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ដង្វាយប្រាក់​រៀល&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ដង្វាយប្រាក់​រៀល</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;២០% ប្រាក់​ដុល្លារ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">២០% ប្រាក់​ដុល្លារ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;២០% ប្រាក់​រៀល&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">២០% ប្រាក់​រៀល</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204);"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:1}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">1</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;F&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Verdana; font-size: 11pt; text-align: right;"><span id="date5"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:25}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar5"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:31}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel5"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:37}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar520"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:43}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel520"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:2}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">2</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;G&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Verdana; font-size: 11pt; text-align: right;"><span id="date6"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:26}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar6"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:32}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel6"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:38}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar620"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:44}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel620"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:3}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">3</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;H&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="date7"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:27}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar7"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:33}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel7"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:39}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar720"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:45}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel720"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:4}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">4</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;I&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="date8"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:28}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar8"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:34}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel8"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:40}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar820"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:46}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel820"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:5}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">5</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;J&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="date9"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:29}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar9"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:35}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel9"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:41}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar920"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:47}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel920"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;*&quot;}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">*</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;សរុប​ដង្វាយ ២០%&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Moul; text-align: center;">សរុប​ដង្វាយ ២០%</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:30}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:36}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:42}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="sumdollar120"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:48}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="sumriel120"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 28px;">
+                    <td rowspan="1" colspan="7" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;បញ្ជីដង្វាយ ២០% ប្រចាំខែ កញ្ញា ឆ្នាំ ២០២៣&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:25,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:30}" style="border-width: 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: middle; font-family: Battambang; font-size: 11pt; text-align: center;"><span style="font-size: 11pt; font-family: Battambang, Arial;">បញ្ជីដង្វាយ ២០% ប្រចាំខែ </span><span style="font-size: 11pt; font-family: Battambang, Arial; font-weight: bold;"><span id="month2"></span></span><span style="font-size: 11pt; font-family: Battambang, Arial;"> ឆ្នាំ <span id="thisYear2"></span></span></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ល.រ&quot;}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ល.រ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;កាលបរិច្ឆេទ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">កាលបរិច្ឆេទ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ដង្វាយប្រាក់ដុល្លារ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ដង្វាយប្រាក់ដុល្លារ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ដង្វាយប្រាក់​រៀល&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">ដង្វាយប្រាក់​រៀល</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;២០% ប្រាក់​ដុល្លារ&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">២០% ប្រាក់​ដុល្លារ</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;២០% ប្រាក់​រៀល&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204); font-family: Siemreap; font-weight: bold; text-align: center;">២០% ប្រាក់​រៀល</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 242, 204);"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:1}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">1</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;K&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: middle; font-size: 11pt; text-align: right;"><span id="date10"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:49}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar10"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:56}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel10"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:63}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar1020"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:70}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel1020"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:2}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">2</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;L&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="date11"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:50}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;">$ <span id="dollar11"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:57}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel11"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:64}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar1120"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:71}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel1120"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:3}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">3</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;M&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="date12"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:51}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar12"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:58}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel12"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:65}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar1220"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:72}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel1220"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:4}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">4</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;N&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="date13"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:52}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;">$ <span id="dollar13"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:59}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel13"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:66}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar1320"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:73}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel1320"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:5}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">5</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;O&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="date14"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:53}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;">$ <span id="dollar14"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:60}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-family: Verdana; font-size: 11pt; text-align: right;"><span id="riel14"></span>៛</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:67}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="dollar1420"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:74}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="riel1420"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 21px;">
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;*&quot;}" style="border-width: 1px 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Khmer; text-align: center;">*</td>
+                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;សរុប​ដង្វាយ ២០%&quot;}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Moul; text-align: center;">សរុប​ដង្វាយ ២០%</td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:54}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:61}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:68}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: center;">$ <span id="sumdollar220"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:75}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; text-align: right;"><span id="sumriel220"></span>៛</td>
+                    <td style="border-width: 1px 3px 1px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 47px;">
+                    <td rowspan="1" colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;សរុប​ដង្វាយ ២០% ត្រីមាសទី ៣/២០២៣&quot;}" style="border-width: 1px 3px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Moul; text-align: center;">សរុប​ដង្វាយ ២០% ត្រីមាសទី <span id="tri"></span> /<span id="thisYear3"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:55}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-weight: bold; text-align: center;"></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:62}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_-* #,##0[$៛-453]_-;\\-* #,##0[$៛-453]_-;_-* \&quot;-\&quot;[$៛-453]_-;_-@&quot;,&quot;3&quot;:1}" style="border-width: 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-weight: bold; text-align: center;"></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:69}" data-sheets-numberformat="{&quot;1&quot;:2,&quot;2&quot;:&quot;_(\&quot;$\&quot;* #,##0.00_);_(\&quot;$\&quot;* \\(#,##0.00\\);_(\&quot;$\&quot;* \&quot;-\&quot;??_);_(@_)&quot;,&quot;3&quot;:1}" style="border-width: 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 0, 0); font-size: 14pt; font-weight: bold; text-align: center;">$ <span id="finaldollar20"></span></td>
+                    <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:76}" data-sheets-numberformat="{&quot;1&quot;:4,&quot;2&quot;:&quot;#,##0[$៛]&quot;,&quot;3&quot;:1}" style="border-width: 1px 1px 3px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 0, 0); font-size: 14pt; font-weight: bold; text-align: right;"><span id="finalriel20"></span>៛</td>
+                    <td style="border-width: 1px 3px 3px 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-image: initial; overflow: hidden; padding: 2px 3px; vertical-align: bottom;"></td>
+                  </tr>
+                  <tr style="color: rgb(0, 0, 0); font-size: 13.3333px; height: 47px;">
+                  </tr>
+                </tbody>
+              </table></google-sheets-html-origin>
+              <button type="button" onclick="window.print()">ព្រីនទំព័រមួយនេះ</button>
+        </div>
+
+        <div​ class="review-container"><button id="sent" style="visibility: hidden;" class="review" type="submit">ផ្ញើទៅហិរញ្ញិក</button></div​>
+    </form>
+    <br><br>
+
+    <img style="width: 100vw; height: 50px; object-fit: cover;object-position: 0% 90%;filter: drop-shadow(0px -2px 2px #141414);" src="../img/rice-field.jpg">
+    
+</body>
+<script src="../src/index.js"></script>
+
+</html>
