@@ -18,11 +18,11 @@
     <hr>
     <br>
     <form class="left-indent" action="/preview" method="post">
-        <label for="name">ក្រុម​ជំនុំ​ឈ្មេាះ<span style="color:red"​៖>*</span>​៖ </label>
+        <label for="name"><strong>ក្រុម​ជំនុំ​ឈ្មេាះ<span style="color:red"​៖>*</span></strong>៖ </label>
         <input type="text" name="name" class="text" id="church" required oninvalid="this.setCustomValidity('សូមតម្រូវឲ្យបំពេញឈ្មោះ​ក្រុម​ជំនុំ')">
         <br><br>
 
-        <label for="trisemester">ត្រីមាសទី៖</label>
+        <label for="trisemester"><strong>ត្រីមាសទី<span style="color: red;">*</span>៖</strong>
         <br>
         <input type="radio" name="trisemester" id="tri-1" class="radio" value="tri-one">
         <label for="tri-1"​>ត្រីមាស​ទី​១​</label><br>
@@ -31,8 +31,21 @@
         <input type="radio" name="trisemester" id="tri-3" class="radio" value="tri-three">
         <label for="tri-3"​>ត្រីមាស​ទី​៣​</label><br>
         <input type="radio" name="trisemester" id="tri-4" class="radio" value="tri-four">
-        <label for="tri-4"​>ត្រីមាស​ទី​៤​</label>
-        <br><br><hr><br>
+        <label for="tri-4"​>ត្រីមាស​ទី​៤​</label></label>
+        <br><br>
+        <label><strong>ប្រចាំឆ្នាំ<span style="color: red;">*</span>៖</strong></label>
+        <select name="year" id="year" required>
+          <option value="2031">២០៣១</option>
+          <option value="2030">២០៣០</option>
+          <option value="2029">២០២៨</option>
+          <option value="2028">២០២៨</option>
+          <option value="2027">២០២៧</option>
+          <option value="2026">២០២៦</option>
+          <option value="2025">២០២៥</option>
+          <option value="2024" selected="selected">២០២៤</option>
+        </select><br>
+        
+        <br><hr><br>
 
         <label for="none"><strong>តង្វាយ​ប្រចាំ​អាទិត្យ៖</strong></label>
         <br><br>
@@ -53,10 +66,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w1-date" id="m1-w1-date">
                             <br><br>
                             <label for="m1-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w1-date-dollar" id="m1-w1-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w1-date-dollar" id="m1-w1-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m1-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w1-date-riel" id="m1-w1-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w1-date-riel" id="m1-w1-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
 
@@ -76,10 +89,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w2-date" id="m1-w2-date">
                             <br><br>
                             <label for="m1-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w2-date-dollar" id="m1-w2-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w2-date-dollar" id="m1-w2-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m1-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w2-date-riel" id="m1-w2-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w2-date-riel" id="m1-w2-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week2-->
@@ -95,10 +108,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w3-date" id="m1-w3-date">
                             <br><br>
                             <label for="m1-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w3-date-dollar" id="m1-w3-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w3-date-dollar" id="m1-w3-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m1-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w3-date-riel" id="m1-w3-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w3-date-riel" id="m1-w3-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week3-->
@@ -114,10 +127,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w4-date" id="m1-w4-date">
                             <br><br>
                             <label for="m1-w4-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w4-date-dollar" id="m1-w4-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w4-date-dollar" id="m1-w4-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m1-w4-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w4-date-riel" id="m1-w4-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w4-date-riel" id="m1-w4-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week4-->
@@ -133,10 +146,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m1-w5-date" id="m1-w5-date">
                             <br><br>
                             <label for="m1-w5-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w5-date-dollar" id="m1-w5-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m1-w5-date-dollar" id="m1-w5-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m1-w5-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w5-date-riel" id="m1-w5-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m1-w5-date-riel" id="m1-w5-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                         <hr><br>
@@ -157,10 +170,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w1-date" id="m2-w1-date">
                             <br><br>
                             <label for="m2-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w1-date-dollar" id="m2-w1-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w1-date-dollar" id="m2-w1-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m2-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w1-date-riel" id="m2-w1-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w1-date-riel" id="m2-w1-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
 
@@ -180,10 +193,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w2-date" id="m2-w2-date">
                             <br><br>
                             <label for="m2-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w2-date-dollar" id="m2-w2-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w2-date-dollar" id="m2-w2-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m2-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w2-date-riel" id="m2-w2-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w2-date-riel" id="m2-w2-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week2-->
@@ -199,10 +212,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w3-date" id="m2-w3-date">
                             <br><br>
                             <label for="m2-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w3-date-dollar" id="m2-w3-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w3-date-dollar" id="m2-w3-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m2-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w3-date-riel" id="m2-w3-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w3-date-riel" id="m2-w3-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week3-->
@@ -218,10 +231,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w4-date" id="m2-w4-date">
                             <br><br>
                             <label for="m2-w4-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w4-date-dollar" id="m2-w4-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w4-date-dollar" id="m2-w4-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m2-w4-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w4-date-riel" id="m2-w4-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w4-date-riel" id="m2-w4-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week4-->
@@ -237,10 +250,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m2-w5-date" id="m2-w5-date">
                             <br><br>
                             <label for="m2-w5-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w5-date-dollar" id="m2-w5-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m2-w5-date-dollar" id="m2-w5-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m2-w5-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w5-date-riel" id="m2-w5-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m2-w5-date-riel" id="m2-w5-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li><hr><br>
                     <!--End Week5-->
@@ -259,10 +272,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w1-date" id="m3-w1-date">
                             <br><br>
                             <label for="m3-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w1-date-dollar" id="m3-w1-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w1-date-dollar" id="m3-w1-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m3-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w1-date-riel" id="m3-w1-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w1-date-riel" id="m3-w1-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
 
@@ -282,10 +295,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w2-date" id="m3-w2-date">
                             <br><br>
                             <label for="m3-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w2-date-dollar" id="m3-w2-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w2-date-dollar" id="m3-w2-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m3-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w2-date-riel" id="m3-w2-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w2-date-riel" id="m3-w2-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week2-->
@@ -301,10 +314,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w3-date" id="m3-w3-date">
                             <br><br>
                             <label for="m3-w1-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w3-date-dollar" id="m3-w3-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w3-date-dollar" id="m3-w3-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m3-w1-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w3-date-riel" id="m3-w3-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w3-date-riel" id="m3-w3-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week3-->
@@ -320,10 +333,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w4-date" id="m3-w4-date">
                             <br><br>
                             <label for="m3-w4-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w4-date-dollar" id="m3-w4-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w4-date-dollar" id="m3-w4-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m3-w4-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w4-date-riel" id="m3-w4-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w4-date-riel" id="m3-w4-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li>
                     <!--End Week4-->
@@ -339,10 +352,10 @@
                             &#160;&#160;&#160;&#160;<input class="text" style="background-color: white;" type="date" name="m3-w5-date" id="m3-w5-date">
                             <br><br>
                             <label for="m3-w5-date-dollar">&#160;&#160;&#160;&#160;ដង្វាយជាដុល្លារ៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w5-date-dollar" id="m3-w5-date-dollar"> $</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white; width: 210px;" type="number" name="m3-w5-date-dollar" id="m3-w5-date-dollar" step="any"> $</span>
                             <br><br>
                             <label for="m3-w5-date-riel">&#160;&#160;&#160;&#160;ដង្វាយជារៀល៖</label>
-                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w5-date-riel" id="m3-w5-date-riel"> ៛</span>
+                            &#160;&#160;&#160;&#160;<span><input class="text right-align" style="background-color: white;  width: 210px;" type="number" name="m3-w5-date-riel" id="m3-w5-date-riel" step="any"> ៛</span>
                             <br><br>
                         </li><hr><br>
                     <!--End Week5-->

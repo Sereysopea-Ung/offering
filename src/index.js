@@ -141,11 +141,11 @@ function handleTrisemesterFour(){
 var cal_button=document.getElementById('cal');
 cal_button.addEventListener('click', function(event){
     document.getElementById("church-name").textContent = document.getElementById('church').value;
-    document.getElementById("thisYear").textContent = new Date().getFullYear();
+    document.getElementById("thisYear").textContent = document.getElementById('year').value;
     document.getElementById('sent').style.visibility = 'visible';
 
     for(let i = 1;i<=3;i++){
-        document.getElementById("thisYear"+i).textContent = new Date().getFullYear(); 
+        document.getElementById("thisYear"+i).textContent = document.getElementById('year').value; 
     }
 
     for(let i=0;i<=14;i++){
@@ -154,19 +154,19 @@ cal_button.addEventListener('click', function(event){
             w=5;
         }
         document.getElementById(`date`+i).textContent = document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date").value;
-        document.getElementById(`dollar`+i).textContent = document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date-dollar").value;
-        document.getElementById(`riel`+i).textContent = document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date-riel").value;
-        document.getElementById(`dollar`+i+20).textContent = (document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date-dollar").value)*0.2;
-        document.getElementById(`riel`+i+20).textContent = (document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date-riel").value)*0.2;
+        document.getElementById(`dollar`+i).textContent = parseFloat(document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date-dollar").value).toFixed(2);
+        document.getElementById(`riel`+i).textContent = parseFloat(document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date-riel").value).toFixed(2);
+        document.getElementById(`dollar`+i+20).textContent = parseFloat((document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date-dollar").value)*0.2).toFixed(2);
+        document.getElementById(`riel`+i+20).textContent = parseFloat((document.getElementById("m"+(Math.floor(i/5)+1)+"-w"+((1+i)%5+w)+"-date-riel").value)*0.2).toFixed(2);
     }
 
     for(let i=0;i<=2;i++){
-        document.getElementById('sumdollar'+i+20).textContent = parseFloat(document.getElementById(`dollar`+5*i+20).textContent) + parseFloat(document.getElementById(`dollar`+(5*i+1)+20).textContent) +parseFloat(document.getElementById(`dollar`+(5*i+2)+20).textContent) +parseFloat(document.getElementById(`dollar`+(5*i+3)+20).textContent)+ parseFloat(document.getElementById(`dollar`+(5*i+4)+20).textContent);
-        document.getElementById('sumriel'+i+20).textContent = parseFloat(document.getElementById(`riel`+5*i+20).textContent) + parseFloat(document.getElementById(`riel`+(5*i+1)+20).textContent) +parseFloat(document.getElementById(`riel`+(5*i+2)+20).textContent) +parseFloat(document.getElementById(`riel`+(5*i+3)+20).textContent)+ parseFloat(document.getElementById(`riel`+(5*i+4)+20).textContent);
+        document.getElementById('sumdollar'+i+20).textContent = (parseFloat(document.getElementById(`dollar`+5*i+20).textContent) + parseFloat(document.getElementById(`dollar`+(5*i+1)+20).textContent) +parseFloat(document.getElementById(`dollar`+(5*i+2)+20).textContent) +parseFloat(document.getElementById(`dollar`+(5*i+3)+20).textContent)+ parseFloat(document.getElementById(`dollar`+(5*i+4)+20).textContent)).toFixed(2);
+        document.getElementById('sumriel'+i+20).textContent = (parseFloat(document.getElementById(`riel`+5*i+20).textContent) + parseFloat(document.getElementById(`riel`+(5*i+1)+20).textContent) +parseFloat(document.getElementById(`riel`+(5*i+2)+20).textContent) +parseFloat(document.getElementById(`riel`+(5*i+3)+20).textContent)+ parseFloat(document.getElementById(`riel`+(5*i+4)+20).textContent)).toFixed(2);
     }
 
-    document.getElementById('finaldollar20').textContent = parseFloat(document.getElementById('sumdollar020').textContent) + parseFloat(document.getElementById('sumdollar120').textContent) + parseFloat(document.getElementById('sumdollar220').textContent) ;
-    document.getElementById('finalriel20').textContent = parseFloat(document.getElementById('sumriel020').textContent) + parseFloat(document.getElementById('sumriel120').textContent) + parseFloat(document.getElementById('sumriel220').textContent) ;
+    document.getElementById('finaldollar20').textContent = (parseFloat(document.getElementById('sumdollar020').textContent) + parseFloat(document.getElementById('sumdollar120').textContent) + parseFloat(document.getElementById('sumdollar220').textContent)).toFixed(2) ;
+    document.getElementById('finalriel20').textContent = (parseFloat(document.getElementById('sumriel020').textContent) + parseFloat(document.getElementById('sumriel120').textContent) + parseFloat(document.getElementById('sumriel220').textContent)).toFixed(2) ;
 
     document.getElementById("table").style.visibility = 'visible';
 

@@ -1,6 +1,6 @@
 {
   "name": "offering",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Receive Offering from south-west KEC",
   "main": "server.js",
   "scripts": {

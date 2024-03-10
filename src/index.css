@@ -89,6 +89,17 @@ label{
     border: 2px solid rgb(102, 102, 43);
 }
 
+#year{
+    height: 35px;
+    border: 1px solid green;
+    background-color: rgb(243, 243, 198);
+    width: 300px;
+    transition: border 0.5s;
+    font-size: 1rem;
+    text-indent: 15px;
+
+}
+
 .text:focus{
     border: 2px solid green;
     outline: none;
@@ -184,6 +195,9 @@ li{
         margin-left: 40px;
     }
     .text{
+        width: 80vw;
+    }
+    #year{
         width: 80vw;
     }
 }
